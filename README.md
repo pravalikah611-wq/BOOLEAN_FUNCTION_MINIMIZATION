@@ -34,18 +34,39 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 module funct1(a,b,c,d,f1);
+
 input a,b,c,d;
+
 output f1;
+
 assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+
 endmodule
+
+module funct2(w,x,y,z,f2);
+
+input w,x,y,z;
+
+output f2;
+
+assign f2=((~y & z)|( w & y )|(x & y));
+
+endmodule
+
 
 **RTL realization output:**
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-14 200605" src="https://github.com/user-attachments/assets/207e1912-5d45-4b06-8c8c-73fb2948f346" />
 
+<img width="1920" height="1080" alt="Screenshot 2025-11-18 225450" src="https://github.com/user-attachments/assets/0252ebd0-761b-42ba-b67e-101c57a683c6" />
+
+
 **Timing Diagram**
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-14 200009" src="https://github.com/user-attachments/assets/0346544b-b54f-46ec-a795-39004e607647" />
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-18 231100" src="https://github.com/user-attachments/assets/cd87b862-4f6f-4bfb-bc77-a92cbe230c5d" />
+
 
 **Result:**
 
